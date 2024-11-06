@@ -1,54 +1,17 @@
-<<<<<<< HEAD
-# SCHub-ReactRepo
-=======
-# React + TypeScript + Vite
+# Introduction
+A React project containing a sample external component for Sitecore Content Hub.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
+After cloning the repo, follow these initial steps to set up your environment:
 
-Currently, two official plugins are available:
+Install Package Dependencies: Open your terminal, navigate to the project folder, and install dependencies by running: `npm install`. (Requires NodeJS and NPM package manager)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Build and Test
+To compile the TypeScript files and bundle them into a minified JavaScript file:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
->>>>>>> 64d66d8 (Setting up Sitecore Content Hub React project with Vite, TypeScript, and basic React component)
+Build the Component:
+1. In your terminal, run: `npm run build --component=<foldername>`.
+2. Replace `<foldername>` with the actual name of the folder containing your component.
+3. After a successful build, the compiled, bundled, and minified JavaScript file will be available in the /dist folder.
+4. Then you start local webserver with `npm run dev`
+5. Open a browser a navigate to localhost: https://localhost:5173/dist/<ScriptName>.js
