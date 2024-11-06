@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# SCHub-ReactRepo
+=======
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,3 +51,4 @@ export default tseslint.config({
   },
 })
 ```
+>>>>>>> 64d66d8 (Setting up Sitecore Content Hub React project with Vite, TypeScript, and basic React component)
